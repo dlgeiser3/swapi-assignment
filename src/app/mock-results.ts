@@ -1,11 +1,32 @@
 import {Result} from './Result'
+import {ResultF} from './Result'
 
-export const RESULTS: Result[] =[
-    {Name: 'Luke', Description:'nice guy'},
-    {Name: 'Lea', Description:'nice girl'},
-    {Name: 'vader', Description:'bad guy'},
-    {Name: 'chewey', Description:'dog'},
-    {Name: 'han', Description:'2cool4skool'},
-    {Name: 'lucario', Description:'pokemon'},
-    {Name: 'terry', Description:'just a dude'},
-]
+export const RESULTSP: Result[] = [
+    {name: 'Luke'},
+    {name: 'Lea'},
+    {name: 'vader'},
+    {name: 'chewey'},
+    {name: 'han'},
+    {name: 'lucario'},
+    {name: 'terry'}
+];
+
+export const RESULTSF: ResultF[] =[
+    {title: 'Luke'},
+    {title: 'Lea'},
+    {title: 'vader'},
+    {title: 'chewey'},
+    {title: 'han'},
+    {title: 'lucario'},
+    {title: 'terry'}
+];
+
+export const RESULTSS: Result[] =[
+    {name: 'Luke'},
+    {name: 'Lea'},
+    {name: 'vader'},
+    {name: 'chewey'},
+    {name: 'han'},
+    {name: 'lucario'},
+    {name: 'terry'}
+];

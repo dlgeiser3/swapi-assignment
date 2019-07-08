@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Result } from '../Result';
-import { RESULTS} from '../mock-results';
+import { RESULTSP} from '../mock-results';
 
 @Component({
   selector: 'app-result-display',
@@ -9,7 +9,7 @@ import { RESULTS} from '../mock-results';
 })
 export class ResultDisplayComponent implements OnInit {
 
-  results = RESULTS;
+  results = RESULTSP;
   constructor() { }
 
   ngOnInit() {

@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SwapiComponent } from './swapi/swapi.component';
 import { ResultDisplayComponent } from './result-display/result-display.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { ResultDisplayComponent } from './result-display/result-display.componen
     AppComponent,
     SwapiComponent,
     ResultDisplayComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
