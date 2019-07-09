@@ -9,7 +9,7 @@ import { RESULTSP} from '../mock-results';
 })
 export class ResultDisplayComponent implements OnInit {
 
-  results = RESULTSP;
+  results = Result;
   constructor() { }
 
   ngOnInit() {
