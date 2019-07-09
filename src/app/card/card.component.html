@@ -1,0 +1,15 @@
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item (click)="sendValue(value)" value="people">people</button>
+  <button mat-menu-item (click)="sendValue(value)" value="films">films</button>
+  <button mat-menu-item (click)="sendValue(value)" value="starships">starships</button>
+</mat-menu>
+
+
+<div *ngFor="let person of people">
+    {{person | json}}
+   </div>
+
+   <script> function sendValue(value) {
+    value= value
+   };</script>
