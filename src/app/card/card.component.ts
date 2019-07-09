@@ -13,11 +13,28 @@ person: '';
 constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    let peopleUrl = `https://swapi.co/api/people/`
+    
+    let peopleUrl = `https://swapi.co/api/people/?search=luke`
     this.http.get(peopleUrl)
     .subscribe(
       (data: any) => {
         this.people = data.results
-        console.log('hello')
   })
-}}
+
+// let vehicleUrl = `https://swapi.co/api/vehicles/?search=sand`
+//   this.http.get(vehicleUrl)
+//     .subscribe(
+//       (data: any) => {
+//         this.ship = data.results
+//       }
+//     )
+
+//   let filmUrl = `https://swapi.co/api/films/?search=revenge`
+//   this.http.get(filmUrl)
+//     .subscribe(
+//       (data: any) => {
+//         this.film = data.results
+//       }
+//     )
+
+  }}
