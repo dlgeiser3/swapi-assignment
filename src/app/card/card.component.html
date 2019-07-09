@@ -1,6 +1,31 @@
-<p>card works!</p>
+<!-- <p>card works!</p> -->
 
 
-<div *ngFor="let person of people">
+<!-- <div *ngFor="let person of people">
   {{person | json}}
-</div>
+</div> -->
+
+<form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+   
+        <select formControlName="searchUrl" matNativeControl required>
+          <option (click)=true value="people">People</option>
+          <option (click)=true value="films">Films</option>
+          <option (click)=true value="starships">Starships</option>
+        </select>
+
+    <!-- <label>
+      Films // People // Starships
+      <input type="text" formControlName="searchUrl">
+    </label> -->
+    
+    <label>
+      What are you looking for?
+      <input type="text" formControlName="searchInfo">
+    </label>
+    
+    
+    <button type="submit">Submit</button>
+  </form>
+
+
+  
