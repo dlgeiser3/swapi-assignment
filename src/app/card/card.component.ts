@@ -27,6 +27,7 @@ constructor(private http: HttpClient) { }
 onSubmit() {
 
   console.warn(this.searchForm.value);
+  console.log(this.searchForm.value)
   return this.searchForm.value;
   
 }
@@ -34,8 +35,8 @@ onSubmit() {
   ngOnInit() {
 
     // THIS IS WHAT NEEDS TO BE FIXED ;_;
-    
-    let peopleUrl = `https://swapi.co/api/${this.searchForm.value[0].value}/?search=${this.searchForm.value[1].value}`
+
+    let peopleUrl = `https://swapi.co/api/people/?search=luke`
     this.http.get(peopleUrl)
     .subscribe(
       (data: any) => {
